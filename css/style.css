@@ -1,0 +1,329 @@
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------ Тело сайта ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+body {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+a {
+    text-decoration: none; 
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url("../img/Ice_rink/intro1.jpeg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+}
+.intro_title {
+    color: #FFE4C4;
+    font-size: 110px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+.intro_title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 0 auto;
+
+    background-color: #FFE4C4;
+}
+
+
+.intro1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+
+    background: url("../img/Ice_rink/intro4.jpeg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro__inner1 {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+}
+.intro_title1 {
+    color: #FFE4C4;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    text-align: center;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- Шапка сайта ------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 3vw;
+    background-color: #1C1C1C;
+    position: fixed;
+    z-index: 3;
+    width: 95vw;
+    
+}
+
+.site-menu > ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.site-menu li {
+    margin: 0 30px;
+}
+
+.site-menu a {
+    color: #FFE4C4;
+}
+
+.section {
+    padding: 80px 0; 
+}
+
+
+.section_header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section_suptitle {
+    font-size: 24px;
+}
+
+.section_title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section_title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+    background-color: #FFE4C4;
+}
+
+.section_text {
+    font-size: 22px;
+    color: black;/*#999;*/
+}
+
+.section_text a {
+    color: black;
+}
+
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products div {
+    padding: 15px;
+}
+
+.products img {
+    filter: brightness(30%)
+}
+
+
+/* second page */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.info p {
+    font-size: 20px;
+}
+/* Table */
+
+.tables {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 70px;
+}
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+    font-size: 150%;
+    padding: 20px;
+}
+
+table {
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: /*#ece9e0;*/#DCDCDC;
+    color: #656665;
+    border: 16px solid /*#ece9e0;*/ #DCDCDC;
+    border-radius: 10px;
+}
+
+th {
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+
+td {
+    background: white;
+    padding: 10px;
+    color: black;
+}
+
+
+/* Contacts */
+
+.img_rinks {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+
+.img_rinks div {
+    width: 250px;
+    height: 250px;  
+    margin-right: 10px;
+    align-items: center;
+}
+
+.img_rinks img {
+    border-radius: 15px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- Подвал ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.footer {
+    background: #1C1C1C;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-row div {
+    padding: 10px;
+}
+
+.footer-copyright-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 10px;
+    color: #FFE4C4
+}
+
+
+.footer-copyright-name-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-copyright-name_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFE4C4
+}
+
+.footer-contacts {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    background-color: white;
+}
+
+
+.footer-contacts a {
+    color: #FFE4C4;
+}
+
+.footer-place {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-place-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
